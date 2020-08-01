@@ -1,0 +1,51 @@
+﻿pygame 1.9.6
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Traceback (most recent call last):
+  File "d:\user\software\vscode2019\common7\ide\extensions\microsoft\python\core\debugpy/..\debugpy\server\cli.py", line 429, in main
+    run()
+  File "d:\user\software\vscode2019\common7\ide\extensions\microsoft\python\core\debugpy/..\debugpy\server\cli.py", line 266, in run_file
+    runpy.run_path(options.target, run_name=compat.force_str("__main__"))
+  File "D:\user\Software\Anaconda\lib\runpy.py", line 263, in run_path
+    pkg_name=pkg_name, script_name=fname)
+  File "D:\user\Software\Anaconda\lib\runpy.py", line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File "D:\user\Software\Anaconda\lib\runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "D:\user\project_developing\python\python_game_developing\alien_invasion\alien_invasion.py", line 22, in <module>
+  File "D:\user\project_developing\python\python_game_developing\alien_invasion\alien_invasion.py", line 17, in run_game
+SystemExit
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\user\Software\Anaconda\lib\runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "D:\user\Software\Anaconda\lib\runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "d:\user\software\vscode2019\common7\ide\extensions\microsoft\python\core\debugpy\__main__.py", line 45, in <module>
+    cli.main()
+  File "d:\user\software\vscode2019\common7\ide\extensions\microsoft\python\core\debugpy/..\debugpy\server\cli.py", line 431, in main
+    log.reraise_exception("Debuggee exited via SystemExit: {0!r}", exc.code, level="debug")
+  File "d:\user\software\vscode2019\common7\ide\extensions\microsoft\python\core\debugpy/..\debugpy\common\log.py", line 223, in reraise_exception
+    _exception(format_string, *args, **kwargs)
+  File "d:\user\software\vscode2019\common7\ide\extensions\microsoft\python\core\debugpy/..\debugpy\common\log.py", line 188, in _exception
+    exception = "".join(traceback.format_exception(*exc_info))
+  File "D:\user\Software\Anaconda\lib\traceback.py", line 121, in format_exception
+    type(value), value, tb, limit=limit).format(chain=chain))
+  File "D:\user\Software\Anaconda\lib\traceback.py", line 508, in __init__
+    capture_locals=capture_locals)
+  File "D:\user\Software\Anaconda\lib\traceback.py", line 363, in extract
+    f.line
+  File "D:\user\Software\Anaconda\lib\traceback.py", line 285, in line
+    self._line = linecache.getline(self.filename, self.lineno).strip()
+  File "D:\user\Software\Anaconda\lib\linecache.py", line 16, in getline
+    lines = getlines(filename, module_globals)
+  File "D:\user\Software\Anaconda\lib\linecache.py", line 47, in getlines
+    return updatecache(filename, module_globals)
+  File "D:\user\Software\Anaconda\lib\linecache.py", line 137, in updatecache
+线程 'MainThread' (0x1) 已退出，返回值为 0 (0x0)。
+    lines = fp.readlines()
+  File "D:\user\Software\Anaconda\lib\codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 56: invalid start byte
+程序“python.exe”已退出，返回值为 -1 (0xffffffff)。
